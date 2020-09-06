@@ -1,0 +1,119 @@
+body{
+    font-size: 0px ;
+}
+ul,p{
+    margin:0px ;
+    padding:0px ;
+}
+a{
+    text-decoration: none ;
+}
+#box{
+    width:1191px ;
+    height:367px ;
+    background-color: #ffffff ;
+    border-top:1px solid beige ;
+}
+.content_box{
+    display: inline-block;
+    width:197px ;
+    height:363px ;
+    border-top:1px solid #e8e8e8 ;
+    border-bottom:1px solid #e8e8e8 ;
+    border-left:1px solid #e8e8e8 ;
+    margin-top:1px ;
+    /* margin-left:1px ; */
+    margin-bottom:1px ;
+    /* position: relative; */
+}
+header{
+    height:41px ;
+    font:16px/41px "宋体" ;
+    text-indent: 14px ;
+}
+header a{
+    margin-left:4px ;
+}
+
+.content_div{
+    width: 169px;
+    height:150px ;
+    background: #f5f5f5 ;
+    margin-left:14px ; 
+    margin-bottom: 13px ;  
+}
+.content_a{
+    display: inline-block ;
+    position: relative;
+    font:12px "宋体";
+}
+.BigImg{
+    display: block;
+    height: 100px ;
+    width: 169px ;
+}
+strong{
+    color:#3c3c3c ;
+    position: absolute ;
+    top:111px; 
+    left:14px ;
+}
+.text_p{
+    color:#3c3c3c ;
+    position: absolute ;
+    top:130px; 
+    left:42px ;
+}
+.a_1{
+    display: inline-block;
+    height:92px ;
+}
+.small_img_L{
+    display: inline-block ;
+    margin-left:14px ;
+}
+.text_p1{
+    color:#3c3c3c ;
+    position: absolute ;
+    top: 80px ;
+    left: 17px;
+}
+.small_img_R{
+    display: inline-block ;
+    margin-left:9px ;
+    
+}
+.a_2{
+    display: inline-block;
+    margin-top:11px ;
+    font:12px/15px  "宋体" ;
+    height:14px ;
+    border-left:1px solid #e1e1e1 ;
+    padding-left: 6px ;
+    color:#3c3c3c ;
+    padding-right: 6px ;
+}
+.a_first{
+    display: inline-block;
+    margin-left:14px ;
+    font:12px/15px  "宋体" ;
+    height:14px ;
+    color:#3c3c3c ;
+    padding-right: 6px ;
+}
+.kuohao1{
+    margin-left: 14px ;
+    color:#e6e6e6 ;
+    font:12px "微软雅黑" ;
+}
+.kuohao2{
+    color:#e6e6e6 ;
+    font:12px "微软雅黑" ;
+}
+.a_3{
+    display: inline-block;
+    margin-top:11px ;
+    font:12px  "宋体" ;
+    color:#3c3c3c ;
+}
+

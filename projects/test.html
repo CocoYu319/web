@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    dov,p{
+        margin:0px ;
+        border:none ;
+        padding:0px;
+    }
+    div{
+        width: 1000px ;
+        height: 900px;
+        margin-bottom: 15px ;
+        background: red;
+    }
+    p{
+        height: 50px;
+        width:100%;
+        background: blue ;
+        position: fixed ;
+        top:0px;
+        display: none ;
+        /* transition: all 0.4s ease-out ;
+        -moz-transition: all 0.4s ease-out ;
+        -webkit-transition: all 0.4s ease-out ; */
+
+    }
+
+</style>
+<body>
+    <div id="div1">1
+    </div>
+    <div id="div2">2
+    </div>
+    <div>3
+    </div>
+    <div>4
+    </div>
+    <p>
+
+    </p>
+    <script src="./jquery-3.5.0.min.js"></script>
+    <script>
+        var div1 = $("#div1") ;
+        $("#div2").hover(function(){
+            div1.stop().slideDown() ;
+        },function(){
+            div1.stop().slideUp() ;
+        })
+        $(window).scroll(function(){
+        if($(window).scrollTop() > 300){
+            $('p').slideDown(1000);
+        }else{
+            $('p').slideUp(1000);
+        }
+    });
+    </script>
+</body>
+</html>

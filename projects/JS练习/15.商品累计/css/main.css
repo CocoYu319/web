@@ -1,0 +1,73 @@
+div,ul,li,button,input,p{border: none; padding: 0; margin: 0;}
+li{list-style: none;}
+
+#box{
+    width: 764px;
+    height: 800px;
+    background: #ffffff url(../img/bg.png) no-repeat 0 0 ;
+    overflow: hidden;
+}
+
+.input{
+    width:36px ;
+    height: 28px;
+    border-radius: 2px ;
+    text-align: center;
+    outline: none ;
+}
+ul{
+    margin-top: 270px;
+    margin-left: 218px;
+    /* width: 323px ; */
+    /* background: red ; */
+}
+li{ 
+    /* width: 323px ; */
+    margin-top:20px ;
+    position: relative;
+}
+li input{
+    /* width:36px ;
+    height: 28px;
+    border-radius: 2px ;
+    text-align: center;
+    outline: none ; */
+}
+li button{
+    width: 36px ;
+    height: 28px;
+    border-radius: 3px ;
+    box-shadow: 1px 1px 5px #ffffff inset;
+    background: #313131 ;
+    outline: none ;
+    cursor: pointer;
+}
+li div{
+    /* width: 182px ; */
+    height: 28px;
+    background: #181918 ;
+    color: white ;
+    font: 12px/28px "微软雅黑";
+    text-align: center ;
+    position: absolute;
+    left: 138px;
+    top:0px ;
+    width: 184px ;
+}
+
+.minus{
+    margin-right: 5px ;
+}
+
+.plus{
+    margin-left: 5px ;
+}
+
+#total{
+    width: 380px ;
+    /* height: 28px ; */
+    /* background: red ; */
+    margin-top:85px ;
+    margin-left: 200px ; 
+    color: #ffffff ;   
+}

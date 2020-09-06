@@ -1,0 +1,33 @@
+WEB前端开发工程师
+
+必备条件：
+1）能上网、会打字、懂得互联网是什么 。
+2）兴趣
+3）肯做练习
+
+要学哪些东西，才能进行 WEB前端开发 的工作：
+1）软件：只需要花5%的精力
+	浏览器（谷歌、IE浏览器、火狐浏览器、苹果浏览器……）
+	浏览器插件F12
+	用来写代码的编辑器：记事本、DW、Sublime ...
+	PhotoShop
+2）语言：至少花95%的精力
+	HTML：“超”文本 标记“语言”
+		语言是和浏览器打交道的（沟通）
+
+	标记、标签：<html>
+	标签对：<html></html> <body></body>
+	单标签：<meta /> <img />
+
+	CSS：层叠样式表
+		width : 200px;
+		height : 200px;
+		border:8px solid red;
+
+	JavaScript：脚本语言（行为）
+		onclick=" this.style.width = '800px'; this.style.height = '400px'; "
+
+硬指标！
+
+
+

@@ -1,0 +1,60 @@
+form{
+	margin-top: 40px;
+	padding-left: 300px;
+}
+._label{
+	font-size: 15px;
+}
+._label1{
+	margin-top: -15px;
+	font-weight: normal;
+}
+.form-control{
+	height: 45px ;
+	margin-bottom: -1px ;
+}
+.btn{
+	height: 45px ;
+	width: 400px ;
+	margin-top: 10px;
+	font-size: 18px;
+}
+#span1{
+	color: red;
+}
+
+.tip-bubble {
+                position: relative;
+                width: 150px;
+                background-color:rgb(252, 186, 186);
+                padding:5px 5px 5px 5px;
+                color:rgba(250, 200, 200, 0);
+                border-radius: 10px;
+                border: 1px solid rgb(252, 186, 186);
+            }
+.tip-bubble:after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border: 10px solid;
+                border-left-width: 8px;
+                border-right-width:8px;
+                border-bottom-color: rgb(252, 186, 186);
+                left: 20%;
+                bottom: 100%;
+                margin-left: -15px;
+}
+.tip-bubble div{
+                color:rgb(231, 97, 97);
+                text-align: center;
+                font-size: 12px ;
+}
+
+
+
+
+
+
+
+

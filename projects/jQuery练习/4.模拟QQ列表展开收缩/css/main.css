@@ -1,0 +1,25 @@
+div, ul,li{padding: 0; margin: 0px; border: none;}
+ul{list-style: none; display: none; }
+
+#wrap{
+    background: pink ;
+    width: 200px ;
+    border: 1px solid gray;
+}
+#wrap span{
+    display: block;
+    height: 35px ;
+    color:black;
+    text-indent: 20px ;
+    font:16px/35px "微软雅黑" ;
+    background: yellow ;
+}
+/*  */
+li{
+    height: 25px;
+    text-indent: 25px ;
+    border-bottom: 1px solid black ;
+    padding: 0;
+    background: #ffffff ;
+}
+

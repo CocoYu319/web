@@ -1,0 +1,21 @@
+
+#box p{font: 15px "宋体"; color:black;}
+#box button{width: 80px; height: 20px; background-color:red; border: none;padding: 0;}
+#box div{width:100px; height: 100px; border: 1px solid black ;}
+
+#mask_box{width: 100%; height: 100%;position: absolute; left: 0; top:0; display: none;}
+#mask_box .select{width: 300px ;height: 200px; border: 10px solid rgb(153, 153, 153) ; margin: 150px auto ; background: #ffffff; }
+#mask_box ul{padding: 0; margin-top: 30px ; margin-left: 25px ;}
+#mask_box li{list-style: none; margin-bottom: 5px ;}
+#mask_box span{font:13px "宋体"; color: black; }
+#mask_box button{width: 50px; height: 40px; border:1px solid black; padding: 0; color: black;} 
+#mask_box #red{background: red;}
+#mask_box #yellow{background: yellow;}
+#mask_box #blue{background: blue;}
+
+#mask_box .btn{width: 50px; height: 20px; border:none; padding: 0; background: blue; margin-left: 10px; }
+
+
+#mask{width: 100%; height: 100%; background: black;position: absolute; left: 0; top:0; opacity: 0.5; display: none;}
+/* #mask{width: 100%; height: 100%; background:rgba(0, 0, 0, .5) ; position: absolute; left: 0; top:0; } */
+

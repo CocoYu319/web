@@ -1,0 +1,12 @@
+div,ul{margin: 0px; padding: 0; border: none;}
+#box{width: 1000px; height: 800px; background: #ffffff url(../img/bg.jpg) no-repeat;position: relative;}
+#wrap{width: 536px; height: 356px; position: absolute;left: 290px; top:150px; }
+
+#list{position: absolute; left: 0px; top:0px;}
+#list li{list-style: none;position: absolute;top: 0px;left: 0px; filter:alpha(opacity=0); opacity:0;}
+#list a{}
+#list img{}
+#corver{position: absolute;top: 0px; left: 0px; width: 536px; height: 356px;}
+
+#right{position: absolute; right: 10px; top:150px; transform: rotate(180deg);}
+#left{position: absolute; left: 10px; top:150px;}

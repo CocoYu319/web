@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>VUE</title>
+		<script src="./vue.js"></script>
+	</head>
+	<body>
+		<div id="app" >
+			<div v-bind:class='{size1:isSize , colorStyle:iscolor }'>dfvdfv</div>
+			<div v-bind:style="{background:bkcolor, color:color,fontSize: isSize?'80px':''}">dcdcd111</div>
+			<p v-html="rawHtml">Using v-html mustacha:</p>
+			<p>{{1==3?'YES':'NO'}}</p>
+			<div @click="click1">
+				<div @click.stop="click2">click</div>
+			</div>
+			<button v-on:click="click3('abc',$event)">数值：{{counter}}</button>
+			<button-counter></button-counter>
+			<test></test>
+			
+		</div>
+		
+		<script type="text/javascript">
+			Vue.component('button-counter',{
+				data:function(){
+					return{counter:0}
+				},
+				template:'<button v-on:click="counter+=1">你点我{{counter}}次了</button>',
+			})
+			var data1 = {a:1};
+			var vm = new Vue({
+				el:"#app",
+				data:{
+					counter:0,
+					rawHtml:'<span style="color: red;">你好世界！</span>',
+					iscolor:true,
+					isSize:true,
+					bkcolor:'red',
+					color:"#ffffff",
+					size:'18px',
+					colortyle:'colorStyle',
+					size1:'size1',
+					
+				},
+				methods:{
+					click1:function(){
+						vm.counter += 1 ;
+						console.log(vm.counter);
+					},
+					click2:function(){
+						console.log(2)
+					},
+					click3:function(str,e){
+						vm.counter += 1 ;
+						console.log(vm.counter);
+						console.log(e);
+					}
+				},
+				components:{
+					test:{
+						template:'<div style="color:blue;"><h2>再见世界</h2></div>'
+					}
+				}
+			});
+			
+			//vm.$data.a = vm.a == data1.a ;
+			//Vue中的方法用$调用
+			vm.$watch('a',function(newVal, oldVal){
+				console.log(newVal, oldVal);
+			})
+			
+		</script>
+		<style>
+			.colorStyle{
+				color:red;
+			}
+			.size1{
+				font-size:80px ;
+			}
+		</style>
+	</body>
+</html>

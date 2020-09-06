@@ -1,0 +1,35 @@
+#wrap{width: 900px; height: 700px; background: url(../img/bg.jpg) no-repeat ;}
+#box{width: 356px; height: 679px; background: url(../img/iphone.png) no-repeat ;position: relative;}
+#list{width: 318px; height: 488px; position: absolute; top:31px; left: 19px;padding: 10px 0 ;}
+#bottom{width: 318px; height: 60px; background: rgb(229, 229, 229);position: absolute; top:545px; left: 19px;}
+#img{margin: 10px 0 0 16px;float: left;}
+#txt{width: 180px; height: 40px; padding-left: 10px; border: none; border-radius: 11px; float: left;margin: 11px 0 0 13px; outline: none;}
+#send{ float: left; width: 64px; height: 40px; margin-top: 11px; font: 16px/40px "微软雅黑" ;background: none; color:pink; outline: none;padding: 0;border: none;}
+
+
+#list li{width:318px; margin-left: 10px; margin-bottom: 10px; list-style: none;}
+/* #list li img{float: left;} */
+#list li p{max-width: 190px; word-wrap:break-word; font:15px/30px "微软雅黑" ;padding: 0 5px;margin: 0; margin-top:3px; margin-left: 8px; background: powderblue; border:none; border-radius: 8px;}
+.clear { zoom:1; }
+.clear:after { content:''; display:block; clear:both; }
+
+.left{float: left;}
+.left img {float: left;}
+.left p{float: left;  margin-left: 5px; }
+.right{float: right;}
+.right img{float: right;  margin-left: 5px;}
+.right p{float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

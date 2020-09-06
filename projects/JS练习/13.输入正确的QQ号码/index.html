@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="box">
+      <input id="txt" type="text" />
+      <input id="btn" type="button" value="验证" />
+      <div class="validate">
+        <div class="arrow"><em></em><span></span></div>
+        <div class="text">请输入5-10位数字</div>
+      </div>
+    </div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+    <script>
+      var li_list = document.getElementsByTagName("li") ;
+        console.log(li_list.length) ;
+        for(var i=0; i<li_list.length; i++){
+
+          (function(index){
+            console.log(index) ;
+            li_list[index].onclick = function(){
+              console.log(index) ;
+            }
+          })(i)
+          // li_list[i].index = i;
+          // console.log("here...") ;
+          // li_list[i].onclick = function(){
+          //   console.log(this.index) ;
+          // }
+        }
+
+      var btn = document.getElementById("btn") ;
+      var validate = document.querySelector(".validate") ;
+      var text = document.querySelector(".text") ;
+      console.log(txt) ;
+      
+      btn.onclick = function(){
+        var txt = document.getElementById("txt").value ;
+        console.log(txt) ;
+        //判断是否为空
+         if(txt != ""){
+           //判断是否为数字
+           if(!isNaN(txt)){
+             //5-10位数字
+             if(txt.length>=5 && txt.length <=10){
+               //不能使小数
+               if(txt == String(parseInt(txt))){
+                validate.style.display = 'block' ;
+                text.innerHTML = "验证通过" ;
+               }else{
+                validate.style.display = 'block' ;
+                text.innerHTML = "不能是小数" ;
+               }
+             }else{
+              validate.style.display = 'block' ;
+              text.innerHTML = "请输入5-10位数字" ;
+             }
+           }else{
+            validate.style.display = 'block' ;
+            text.innerHTML = "不是数字" ;
+           }
+         }else{
+          validate.style.display = 'block' ;
+          text.innerHTML = "不能为空" ;
+         }
+      }
+      
+    </script>    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+body{
+    background-color: #666 ;
+}
+#clock{
+    width: 250px ;
+    height: 38px;
+    margin: 50px auto ;
+}
+#clock>img{
+    width: 25px;
+    height: 36px;
+    margin: 0 2px ;
+    /* position: relative; */
+}
+#clock>span{
+    color:#aaa ;
+    font-size: 50px ;
+}
+#kk{
+    background-color: red ;
+    width: 500px ;
+    height: 1900px;
+}
+#oo{
+    color:red ;
+}

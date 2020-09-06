@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="app">
+			<p id="title">原来的数据</p>
+			<button id="btn">vfvfvf</button>
+		</div>
+		<script src='./vue.js'></script>
+		<script>
+			
+			var btn = document.getElementById('btn') ;
+			var title1 = document.getElementById('title') ;
+			
+			// title1.innerHTML = "dddd" ;
+			//使用数据的时候要先对数据进行劫持 Object.defineProperty()  把属性
+			//变成访问器的方式
+			var data = {
+				title:"新闻",
+				content:"内容",
+			}
+			observer(data) ;  //劫持data
+			function observer(obj){
+				Object.keys(obj).forEach((item)=>{
+					defineReactive(obj, item, obj[item]);
+				})
+			}
+			function defineReactive(obj, key, value){
+				Object.defineProperty(obj, key, {
+					get(){
+						return value;
+					},
+					set(newValue){
+						value = newValue ;
+						// console.log(newValue);
+						title1.innerHTML = newValue;
+					}
+				})
+			}
+			
+			// var vl= "xin"
+			// Object.defineProperty(data, 'title',{
+			// 	get(){
+			// 		console.log('我访问数据了');
+			// 		return val;
+			// 	},
+			// 	set(newValue){ 
+			// 		console.log("我设置了新值")
+			// 		val = newValue; 
+			// 	}
+				// configurable:false,//是否可以被删除
+				// value:'新改变的',
+				// writable:false,  //不允许改写 
+				// enumberable:false, //不可被枚举（不可以备遍历到）
+			//});
+			
+			setTimeout(function(){
+				data.title = "改过了";
+				console.log("title的值："+data.title) ;
+			},2000);
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

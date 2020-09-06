@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>揉捏div</title>
+    <link rel="stylesheet" href="./css/揉捏div.css">
+</head>
+<body>
+        <div id="box">
+            <p>揉捏下面的DIV：<button id="btn">点击揉捏</button></p>
+            <div id="CBox"></div>
+        </div>
+        <div id="mask"></div>
+        <div id="mask_box">
+            <div class="select">
+                <ul>
+                    <li>
+                        <span>选择背景颜色:</span>
+                        <button id="red">红</button>
+                        <button id="yellow">黄</button>
+                        <button id="blue">蓝</button>
+                    </li>
+                    <li>
+                        <span>选择宽度(px):</span>
+                        <button id="w_200">200</button>
+                        <button id="w_300">300</button>
+                        <button id="w_400">400</button>
+                    </li>
+                    <li>
+                        <span>选择高度(px):</span>
+                        <button id="h_200">200</button>
+                        <button id="h_300">300</button>
+                        <button id="h_400">400</button>
+                    </li>
+                </ul>
+                <button id="sure" class="btn">确定</button>
+                <button id="back" class="btn">恢复</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="./js/揉捏div.js"></script>
+</body>
+</html>

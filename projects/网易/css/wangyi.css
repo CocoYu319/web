@@ -1,0 +1,28 @@
+body{
+    width: 300px ;
+    height: 215px ;
+    
+}
+#title{
+    width: 114px ;
+    height: 29px;
+    border-top:2px solid #206f96 ;
+    border-left: 1px solid #cfcfcf ;
+    border-right:1px solid #cfcfcf ;
+    background: url(../img/title-bg.gif) repeat-x ;
+}
+#content{
+    width: 298px ;
+    height:182px ;
+    border:1px solid #cfcfcf ;
+}
+#content_1{
+    width: 298px ;
+    height: 57px ;
+    background: url(../img/mail.gif) no-repeat 16px 25px;
+}
+#content_2{
+    width: 298px ;
+    height:125px ;
+    background: #f7f7f7 url(../img/mouse.gif) no-repeat 9px 51px ;
+}

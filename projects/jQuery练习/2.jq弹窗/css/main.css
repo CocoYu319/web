@@ -1,0 +1,16 @@
+div,p{padding: 0; margin: 0 ;}
+body{
+    height: 2000px ;
+}
+#mes{
+    width: 200px;
+    height: 200px;
+    border:1px solid black ;
+    position: relative;
+}
+
+#close{
+    position: absolute ;
+    right: 0;
+    top: 0 ;
+}

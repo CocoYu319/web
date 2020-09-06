@@ -1,0 +1,10 @@
+.active{
+    background-color: red ;
+}
+
+#div4 div{
+    width:100px ;
+    height: 200px;
+    border:1px solid red ;
+    display: none ;
+}

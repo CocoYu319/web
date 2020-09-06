@@ -1,0 +1,111 @@
+div, ul, li,p{padding:0px; margin:0px; border:none ;}
+a{
+    text-decoration: none ;
+}
+li{
+    list-style: none;
+}
+.clear::after{
+    content: "" ;
+    display: block ;
+    clear: both;
+}
+.clear{
+    zoom: 1;
+}
+#wrap{
+    width: 518px ;
+    height: 35px;
+    border-width:1px ;
+    border-radius: 5px ;
+    border-style: solid ;
+    border-color: #21639c ;
+    background: red url(../1.png) repeat-x 0px 0px ;
+    position: relative;
+}
+#wrap .nav_ul{
+    margin-left: 13px ;
+    margin-top:4px ;
+}
+
+#wrap .nav_ul li{
+    float: left;
+}
+.fontStyle{
+    font-size: 14px ;
+    color:#ffffff ;
+    line-height: 25px ;
+    padding: 0px 20px ;
+    margin:0px 3px ;
+}
+.fontStyle1{
+    font-size: 12px ;
+    line-height: 25px ;
+    color:#215a9c ;
+    padding: 0px 8px ;
+    border-right: 1px solid #7b5ab5 ;
+}
+.toBlock{
+    display: block ;
+    
+}
+#split{
+    width: 2px ;
+    height: 25px;
+    background: url(../split.png) no-repeat 0px 0px ;
+    padding: 0px ;
+}
+.toHover:hover{
+    background-color: #739cc6 ;
+    border-radius: 5px ;
+}
+
+.panel{
+    height: 31px;
+    position: absolute;
+    top:42px ;
+    display: none; 
+}
+#menu{
+    width: 280px ;
+
+}
+.trangle{
+    width: 7px ;
+    height: 5px;
+    position: absolute ;
+    top:0px ;
+    left: 42px;
+    background: #ffffff url(../trangle.png) no-repeat 0px 0px;
+    z-index: 1 ;
+}
+.bk{
+    width: 100% ;
+    height: 25px ;
+    border: 1px solid #94b5d6 ;
+    border-radius: 4px;
+    background: #ffffff url(../menu_bk.png) repeat-x ;
+    position: absolute ;
+    top:4px ;
+}
+
+.menu_ul{
+    margin-left: 15px ;
+}
+#menu a:hover{
+    text-decoration: underline ;
+}
+
+#about-menu{
+    width: 290px ;
+    /* display: block ; */
+}
+
+#works-menu{
+    width: 260px ;
+    /* display: block ; */
+}
+#blog-menu{
+    width: 355px ;
+    display: none ;
+}

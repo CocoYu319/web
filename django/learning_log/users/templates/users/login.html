@@ -1,0 +1,21 @@
+{% extends 'learning_logs/base.html' %}
+
+
+{% block header %}
+	<h2>Log in your account.</h2>
+{% endblock header %}
+
+{% block content %}
+
+	<form method="post" action="{% url 'users:login'%}" class="form">
+		{% csrf_token %}
+		{{ form.as_p }}   
+
+	
+		<button name='submit' class='btn btn-primary'>login in</button>
+	
+	<input type = "hidden" name = "next" value = "{% url 'learning_logs:index' %}" />
+	</form>
+{% endblock content %}
+
+
